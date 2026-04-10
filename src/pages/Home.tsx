@@ -14,7 +14,7 @@ export const Home: React.FC<{ onNavigate: (tab: string) => void }> = ({ onNaviga
             className="w-full h-full object-cover opacity-60 dark:opacity-40"
             referrerPolicy="no-referrer"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-beige-100/50 to-beige-100 dark:via-slate-900/50 dark:to-slate-900" />
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-sage-950/50 to-sage-950" />
         </div>
 
         <div className="relative z-10 text-center px-4 max-w-4xl">
@@ -29,7 +29,7 @@ export const Home: React.FC<{ onNavigate: (tab: string) => void }> = ({ onNaviga
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            className="text-4xl md:text-6xl font-bold text-sage-950 dark:text-beige-50 leading-tight mb-6 [text-shadow:_0_2px_4px_rgba(0,0,0,0.1)]"
+            className="text-4xl md:text-6xl font-bold text-beige-50 leading-tight mb-6 [text-shadow:_0_2px_4px_rgba(0,0,0,0.3)]"
           >
             당신의 마지막 길,<br />
             우리가 따뜻하게 동행합니다
@@ -38,7 +38,7 @@ export const Home: React.FC<{ onNavigate: (tab: string) => void }> = ({ onNaviga
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4 }}
-            className="text-lg md:text-xl text-sage-900 dark:text-beige-100 mb-10 max-w-2xl mx-auto font-medium"
+            className="text-lg md:text-xl text-beige-100 mb-10 max-w-2xl mx-auto font-medium"
           >
             외롭게 떠나는 이가 없는 세상, <br />
             존엄한 죽음이 보장되는 사회를 위해 시민들과 함께 걷습니다.
@@ -78,11 +78,11 @@ export const Home: React.FC<{ onNavigate: (tab: string) => void }> = ({ onNaviga
             </p>
           </div>
           <div className="flex flex-wrap gap-4">
-            <button className="flex flex-col items-center gap-2 bg-white dark:bg-slate-800 p-6 rounded-3xl shadow-sm hover:shadow-md transition-all w-40 border border-sage-100 dark:border-slate-700">
-              <Phone className="text-sage-500" size={28} />
+            <button className="flex flex-col items-center gap-2 bg-sage-100 p-6 rounded-3xl shadow-sm hover:shadow-md transition-all w-40 border border-sage-200">
+              <Phone className="text-sage-700" size={28} />
               <div className="text-center">
-                <span className="text-sm font-bold block">긴급 상담</span>
-                <span className="text-xs text-sage-600 font-medium">02-362-4488</span>
+                <span className="text-sm font-bold block text-sage-950">긴급 상담</span>
+                <span className="text-xs text-sage-800 font-medium">02-362-4488</span>
               </div>
             </button>
           </div>
@@ -100,15 +100,15 @@ export const Home: React.FC<{ onNavigate: (tab: string) => void }> = ({ onNaviga
           />
         </div>
         <div className="space-y-6">
-          <h2 className="text-3xl font-bold text-sage-950 dark:text-beige-50">"누구도 외롭게 떠나지 않도록"</h2>
-          <p className="text-lg text-sage-900 dark:text-beige-100 leading-relaxed font-medium">
+          <h2 className="text-3xl font-bold text-beige-50">"누구도 외롭게 떠나지 않도록"</h2>
+          <p className="text-lg text-beige-100 leading-relaxed font-medium">
             기독교장례문화선교재단은 가족이 없거나, 가난하다는 이유로 마지막 길조차 보장받받지 못하는 우리 이웃들을 위해 존재합니다. 
             시민들의 정성 어린 후원과 자원봉사자들의 따뜻한 손길이 모여 존엄한 배웅을 실천하고 있습니다.
           </p>
           <div className="pt-4">
             <button 
               onClick={() => onNavigate('accompany')}
-              className="text-sage-700 dark:text-sage-300 font-bold flex items-center gap-2 hover:gap-4 transition-all"
+              className="text-sage-300 font-bold flex items-center gap-2 hover:gap-4 transition-all"
             >
               우리의 활동 더 보기 <ArrowRight size={20} />
             </button>

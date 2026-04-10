@@ -29,31 +29,18 @@
 
 @layer base {
   html {
-    color-scheme: light;
-  }
-  
-  html.dark {
     color-scheme: dark;
   }
 
   body {
-    background-color: var(--color-beige-100);
-    color: #0f172a; /* slate-950 equivalent, very dark */
+    background-color: var(--color-sage-950);
+    color: var(--color-beige-50);
     transition: background-color 0.3s, color 0.3s;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
-
-  .dark body {
-    background-color: #020617; /* slate-950 equivalent */
-    color: var(--color-beige-50);
-  }
 }
 
 .glass {
-  @apply bg-white/70 backdrop-blur-md border border-white/20;
-}
-
-.dark .glass {
-  @apply bg-slate-800/70 border-slate-700/30;
+  @apply bg-sage-900/80 backdrop-blur-md border border-sage-800/50;
 }

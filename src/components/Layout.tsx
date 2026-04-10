@@ -22,16 +22,12 @@ export const Layout: React.FC<LayoutProps> = ({ children, activeTab, setActiveTa
   return (
     <div className="min-h-screen flex flex-col">
       {/* Accessibility Bar */}
-      <div className="bg-sage-600 text-white py-1 px-4 flex justify-end items-center gap-4 text-xs font-medium">
+      <div className="bg-sage-800 text-beige-100 py-1 px-4 flex justify-end items-center gap-4 text-xs font-medium border-b border-sage-700">
         <div className="flex items-center gap-2">
           <Type size={14} />
           <button onClick={decreaseFont} className="hover:underline">가-</button>
           <button onClick={increaseFont} className="hover:underline">가+</button>
         </div>
-        <button onClick={toggleDark} className="flex items-center gap-1 hover:underline">
-          {isDark ? <Sun size={14} /> : <Moon size={14} />}
-          {isDark ? '라이트 모드' : '다크 모드'}
-        </button>
       </div>
 
       {/* Navigation */}
@@ -43,7 +39,7 @@ export const Layout: React.FC<LayoutProps> = ({ children, activeTab, setActiveTa
           <div className="w-10 h-10 bg-sage-500 rounded-full flex items-center justify-center text-white">
             <Heart size={24} fill="currentColor" />
           </div>
-          <span className="text-xl font-bold tracking-tight text-sage-950 dark:text-beige-50">
+          <span className="text-xl font-bold tracking-tight text-beige-50">
             기독교장례문화선교재단
           </span>
         </div>
@@ -56,8 +52,8 @@ export const Layout: React.FC<LayoutProps> = ({ children, activeTab, setActiveTa
               className={cn(
                 "relative py-2 text-sm font-bold transition-colors",
                 activeTab === item.id 
-                  ? "text-sage-950 dark:text-beige-50" 
-                  : "text-slate-700 hover:text-sage-950 dark:text-slate-400 dark:hover:text-beige-50"
+                  ? "text-beige-50" 
+                  : "text-sage-400 hover:text-beige-50"
               )}
             >
               {item.label}
