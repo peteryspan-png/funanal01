@@ -43,7 +43,7 @@ export const Layout: React.FC<LayoutProps> = ({ children, activeTab, setActiveTa
           <div className="w-10 h-10 bg-sage-500 rounded-full flex items-center justify-center text-white">
             <Heart size={24} fill="currentColor" />
           </div>
-          <span className="text-xl font-bold tracking-tight text-sage-800 dark:text-sage-200">
+          <span className="text-xl font-bold tracking-tight text-sage-950 dark:text-beige-50">
             기독교장례문화선교재단
           </span>
         </div>
@@ -54,10 +54,10 @@ export const Layout: React.FC<LayoutProps> = ({ children, activeTab, setActiveTa
               key={item.id}
               onClick={() => setActiveTab(item.id)}
               className={cn(
-                "relative py-2 text-sm font-medium transition-colors",
+                "relative py-2 text-sm font-bold transition-colors",
                 activeTab === item.id 
-                  ? "text-sage-600 dark:text-sage-400" 
-                  : "text-slate-500 hover:text-sage-500"
+                  ? "text-sage-950 dark:text-beige-50" 
+                  : "text-slate-700 hover:text-sage-950 dark:text-slate-400 dark:hover:text-beige-50"
               )}
             >
               {item.label}
@@ -99,14 +99,14 @@ export const Layout: React.FC<LayoutProps> = ({ children, activeTab, setActiveTa
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <h3 className="text-lg font-bold mb-4">기독교장례문화선교재단</h3>
-            <p className="text-sm text-sage-300 leading-relaxed">
+            <p className="text-sm text-beige-100 leading-relaxed font-medium">
               우리는 모든 사람이 존엄하게 삶을 마무리할 수 있는 사회를 꿈꿉니다.<br />
               무연고 사망자와 저소득 시민의 마지막 길을 함께합니다.
             </p>
           </div>
           <div>
             <h4 className="font-bold mb-4">연락처</h4>
-            <p className="text-sm text-sage-300">
+            <p className="text-sm text-beige-100 font-medium">
               전화: 02-362-4488<br />
               이메일: t023624488@gmail.com
             </p>
@@ -114,9 +114,9 @@ export const Layout: React.FC<LayoutProps> = ({ children, activeTab, setActiveTa
           <div>
             <h4 className="font-bold mb-4">함께하기</h4>
             <div className="flex gap-4">
-              <button className="text-sage-300 hover:text-white transition-colors">인스타그램</button>
-              <button className="text-sage-300 hover:text-white transition-colors">페이스북</button>
-              <button className="text-sage-300 hover:text-white transition-colors">블로그</button>
+              <button className="text-beige-100 hover:text-white transition-colors font-medium">인스타그램</button>
+              <button className="text-beige-100 hover:text-white transition-colors font-medium">페이스북</button>
+              <button className="text-beige-100 hover:text-white transition-colors font-medium">블로그</button>
             </div>
           </div>
         </div>

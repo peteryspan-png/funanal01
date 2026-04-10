@@ -6,8 +6,8 @@ export const Donate: React.FC = () => {
   return (
     <div className="max-w-6xl mx-auto px-4 py-12 space-y-20">
       <header className="text-center space-y-4">
-        <h1 className="text-4xl font-bold text-sage-900 dark:text-beige-100">후원하기</h1>
-        <p className="text-sage-600 dark:text-sage-400 max-w-2xl mx-auto">
+        <h1 className="text-4xl font-bold text-sage-950 dark:text-beige-50">후원하기</h1>
+        <p className="text-sage-900 dark:text-beige-100 max-w-2xl mx-auto font-medium">
           여러분의 따뜻한 마음이 모여 누군가의 마지막 길이 외롭지 않게 됩니다. <br />
           존엄한 배웅을 위한 여정에 함께해주세요.
         </p>
@@ -28,7 +28,7 @@ export const Donate: React.FC = () => {
               <p className="text-xl font-bold text-sage-900 dark:text-beige-100 mb-2">국민 782701.04.140438</p>
               <p className="text-sage-700 dark:text-sage-300 font-medium">기독교 장례 문화선교 재단</p>
             </div>
-            <p className="text-sage-600 dark:text-sage-400 leading-relaxed mt-6">
+            <p className="text-sage-900 dark:text-beige-100 leading-relaxed mt-6 font-medium">
               보내주신 후원금은 무연고 사망자와 저소득 소외계층의 <br />
               존엄한 마지막 길을 배웅하는 데 소중히 사용됩니다.
             </p>
@@ -50,7 +50,7 @@ export const Donate: React.FC = () => {
                 <item.icon size={24} />
               </div>
               <h4 className="font-bold">{item.label}</h4>
-              <p className="text-sm text-sage-600 dark:text-sage-400">{item.desc}</p>
+              <p className="text-sm text-sage-900 dark:text-beige-100 font-medium">{item.desc}</p>
             </div>
           ))}
         </div>

@@ -13,8 +13,8 @@ export const Support: React.FC = () => {
   return (
     <div className="max-w-6xl mx-auto px-4 py-12 space-y-20">
       <header className="text-center space-y-4">
-        <h1 className="text-4xl font-bold text-sage-900 dark:text-beige-100">장례 지원 안내</h1>
-        <p className="text-sage-600 dark:text-sage-400 max-w-2xl mx-auto">
+        <h1 className="text-4xl font-bold text-sage-950 dark:text-beige-50">장례 지원 안내</h1>
+        <p className="text-sage-900 dark:text-beige-100 max-w-2xl mx-auto font-medium">
           가족이 없거나 경제적 어려움으로 장례를 치르기 힘든 분들을 위해 <br />
           기독교장례문화선교재단이 마지막 길을 함께합니다.
         </p>
@@ -37,7 +37,7 @@ export const Support: React.FC = () => {
                 <step.icon size={32} />
               </div>
               <h3 className="text-lg font-bold mb-2">{step.title}</h3>
-              <p className="text-sm text-sage-600 dark:text-sage-400 leading-relaxed">{step.desc}</p>
+              <p className="text-sm text-sage-900 dark:text-beige-100 leading-relaxed font-medium">{step.desc}</p>
             </motion.div>
           ))}
         </div>
@@ -52,7 +52,7 @@ export const Support: React.FC = () => {
             </div>
             <div>
               <h3 className="text-xl font-bold mb-3">지원 대상</h3>
-              <ul className="space-y-2 text-sage-700 dark:text-sage-300 list-disc pl-5">
+              <ul className="space-y-2 text-sage-900 dark:text-beige-100 list-disc pl-5 font-medium">
                 <li>무연고 사망자 (연고자가 없거나 알 수 없는 경우)</li>
                 <li>연고자가 있으나 시신 인수를 거부/기피하는 경우</li>
                 <li>기초생활수급자 등 경제적 어려움으로 장례가 불가능한 경우</li>
@@ -66,7 +66,7 @@ export const Support: React.FC = () => {
             </div>
             <div>
               <h3 className="text-xl font-bold mb-3">지원 내용</h3>
-              <ul className="space-y-2 text-sage-700 dark:text-sage-300 list-disc pl-5">
+              <ul className="space-y-2 text-sage-900 dark:text-beige-100 list-disc pl-5 font-medium">
                 <li>장례식장 빈소 마련 및 예배 및 제례 지원</li>
                 <li>운구, 화장, 안치 등 장례 전 과정 지원</li>
                 <li>장례지도사 및 추모 자원봉사자 파견</li>

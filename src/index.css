@@ -11,6 +11,7 @@
   --color-sage-700: #455850;
   --color-sage-800: #3a4943;
   --color-sage-900: #323e39;
+  --color-sage-950: #1a231f;
 
   --color-beige-50: #fdfcfb;
   --color-beige-100: #f5f2ed;
@@ -28,11 +29,11 @@
 
 @layer base {
   body {
-    @apply bg-beige-100 text-slate-900 transition-colors duration-300;
+    @apply bg-beige-100 text-slate-950 transition-colors duration-300;
   }
 
   .dark body {
-    @apply bg-slate-900 text-beige-100;
+    @apply bg-slate-950 text-beige-50;
   }
 }
 
