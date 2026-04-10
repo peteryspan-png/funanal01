@@ -28,12 +28,25 @@
 }
 
 @layer base {
+  html {
+    color-scheme: light;
+  }
+  
+  html.dark {
+    color-scheme: dark;
+  }
+
   body {
-    @apply bg-beige-100 text-slate-950 transition-colors duration-300;
+    background-color: var(--color-beige-100);
+    color: #0f172a; /* slate-950 equivalent, very dark */
+    transition: background-color 0.3s, color 0.3s;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   .dark body {
-    @apply bg-slate-950 text-beige-50;
+    background-color: #020617; /* slate-950 equivalent */
+    color: var(--color-beige-50);
   }
 }
 
