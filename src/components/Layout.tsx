@@ -104,7 +104,7 @@ export const Layout: React.FC<LayoutProps> = ({ children, activeTab, setActiveTa
             <h4 className="font-bold mb-4">연락처</h4>
             <p className="text-sm text-beige-100 font-medium">
               전화: 02-362-4488<br />
-              이메일: t023624488@gmail.com
+              이메일: Jinseok0@naver.com
             </p>
           </div>
           <div>
